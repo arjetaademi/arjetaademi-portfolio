@@ -1,16 +1,27 @@
-# React + Vite
+# Arjeta Ademi | Web Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My personal portfolio, built with React and Vite. It showcases my web development projects, my internship at Fetosoft, and my ongoing work on a product management app for Donika Cosmetics.
 
-Currently, two official plugins are available:
+## Featured Projects
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+| Project | Description | Link |
+| --- | --- | --- |
+| **Bookly Beauty** | A React app for booking and managing lash lift and brow lamination appointments online, with Supabase for reservations. | [Live Demo](https://bookly-beauy.netlify.app/) |
+| **LessonHub** | An online course platform developed during my internship at Fetosoft. It includes free and PRO lessons, search and filters, and an admin dashboard. | [GitHub Repository](https://github.com/arjetaademi/LessonHub) |
 
-## React Compiler
+## Portfolio Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+React, Vite, JavaScript, and CSS.
 
-## Expanding the ESLint configuration
+## Run Locally
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev
+```
+
+Open the local URL displayed in the terminal.
+
+## Contact
+
+[LinkedIn](https://www.linkedin.com/in/arjeta-ademi-a4a768247/) · [GitHub](https://github.com/arjetaademi) · [Email](mailto:arjetaademi47@gmail.com)
