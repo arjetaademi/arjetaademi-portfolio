@@ -1,0 +1,139 @@
+/* Experience timeline */
+#experience .timeline {
+  position: relative;
+  max-width: 760px;
+  padding-left: 34px;
+}
+
+#experience .timeline::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  left: 6px;
+  width: 2px;
+  background: var(--rose);
+  opacity: 0.5;
+}
+
+#experience .timeline .item {
+  position: relative;
+  margin-bottom: 42px;
+}
+
+#experience .timeline .item:last-child {
+  margin-bottom: 0;
+}
+
+#experience .timeline .item::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -34px;
+  box-sizing: border-box;
+  width: 14px;
+  height: 14px;
+  border: 3px solid var(--bg);
+  border-radius: 50%;
+  background: var(--plum);
+  box-shadow: 0 0 0 1.5px var(--plum);
+}
+
+#experience .item .meta {
+  color: var(--plum);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+#experience .item h3 {
+  margin: 4px 0 2px;
+  font-size: 1.4rem;
+}
+
+#experience .item .date {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+#experience .item .org {
+  color: var(--plum);
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+#experience .item p {
+  margin-top: 10px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* Skills cards */
+#experience .skills {
+  max-width: 760px;
+  margin-top: 64px;
+}
+
+#experience .skills h3 {
+  margin-bottom: 18px;
+  font-size: 1.3rem;
+}
+
+#experience .skills .tags {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0;
+}
+
+#experience .skills .tags > span {
+  display: flex;
+  align-items: center;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--rose);
+  border-radius: 12px;
+  background: var(--card);
+  color: var(--ink);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  transition: transform 200ms ease, box-shadow 200ms ease,
+    border-color 200ms ease, background-color 200ms ease;
+}
+
+@media (hover: hover) {
+  #experience .skills .tags > span:hover {
+    transform: translateY(-5px);
+    border-color: var(--rose);
+    border-left-color: var(--plum);
+    background-color: #f8e3eb;
+    box-shadow: 0 6px 24px rgb(183 135 147 / 55%);
+  }
+
+  #experience .skills .tags > span:active {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 12px rgb(183 135 147 / 35%);
+  }
+}
+
+/* Mobile layout */
+@media (max-width: 650px) {
+  #experience .skills .tags {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  #experience .skills .tags > span {
+    transition: none;
+  }
+
+  #experience .skills .tags > span:hover,
+  #experience .skills .tags > span:active {
+    transform: none;
+  }
+}

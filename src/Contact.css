@@ -1,0 +1,25 @@
+.contact
+ { text-align: center;
+     background: var(--plum);
+      color: #fff; 
+    }
+.contact h2 {
+     color: #fff; 
+     font-size: clamp(2rem, 4.5vw, 3.2rem);
+     }
+.contact p {
+     color: #ecd9df;
+      max-width: 480px; 
+      margin: 16px auto 32px;
+       font-weight: 300; 
+    }
+.contact .btn {
+     background: #fff;
+      color: var(--plum); 
+      border-color: #fff; 
+    }
+.contact .btn:hover {
+     background: var(--rose);
+      border-color: var(--rose);
+       color: #fff; 
+    }

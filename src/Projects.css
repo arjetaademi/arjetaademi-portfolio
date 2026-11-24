@@ -1,0 +1,12 @@
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; }
+.card {
+  background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+  padding: 30px 26px; display: flex; flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+.card:hover { transform: translateY(-6px); box-shadow: 0 22px 44px rgba(122, 63, 86, 0.14); border-color: var(--rose); }
+.card .num { font-family: 'Fraunces', serif; font-size: 2rem; color: var(--rose); line-height: 1; margin-bottom: 18px; }
+.card h3 { font-size: 1.35rem; margin-bottom: 10px; }
+.card p { color: var(--muted); font-size: 0.94rem; flex: 1; }
+.card .links { display: flex; gap: 18px; font-size: 0.86rem; font-weight: 600; color: var(--plum); }
+.card .links a:hover { color: var(--rose); }
